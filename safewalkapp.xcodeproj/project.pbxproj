@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25BC644330A315C000A6DE6E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 25BC644230A315C000A6DE6E /* FirebaseAuth */; };
+		25BC644530A315C000A6DE6E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 25BC644430A315C000A6DE6E /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25BC63FD309F1D1C00A6DE6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25BC63E7309F1D1B00A6DE6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25BC63EE309F1D1B00A6DE6E;
+			remoteInfo = safewalkapp;
+		};
+		25BC6407309F1D1D00A6DE6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25BC63E7309F1D1B00A6DE6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25BC63EE309F1D1B00A6DE6E;
+			remoteInfo = safewalkapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25BC63EF309F1D1B00A6DE6E /* safewalkapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = safewalkapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25BC63FC309F1D1C00A6DE6E /* safewalkappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = safewalkappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25BC6406309F1D1D00A6DE6E /* safewalkappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = safewalkappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		259CDD4330A31FD60034B9C8 /* Exceptions for "safewalkapp" folder in "safewalkapp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Controllers/AuthController.swift,
+				Controllers/Contactcontroller.swift,
+				Controllers/Destinationcontroller.swift,
+				"GoogleService-Info.plist",
+				Models/AppUser.swift,
+				Models/Trustedcontact.swift,
+				safewalkappApp.swift,
+				Services/AuthService.swift,
+				Services/Contactservice.swift,
+				Services/Locationservice.swift,
+				Views/Addcontactview.swift,
+				Views/Circleview.swift,
+				Views/Components.swift,
+				Views/CreateAccountView.swift,
+				Views/Homeview.swift,
+				Views/Invitesheet.swift,
+				Views/MainTabView.swift,
+				Views/RootView.swift,
+				Views/SignInView.swift,
+				Views/Theme.swift,
+			);
+			target = 25BC63EE309F1D1B00A6DE6E /* safewalkapp */;
+		};
+		259CDD4430A31FD60034B9C8 /* Exceptions for "safewalkapp" folder in "safewalkappTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Controllers/AuthController.swift,
+				Controllers/Contactcontroller.swift,
+				Controllers/Destinationcontroller.swift,
+				"GoogleService-Info.plist",
+				Models/AppUser.swift,
+				Models/Trustedcontact.swift,
+				safewalkappApp.swift,
+				Services/AuthService.swift,
+				Services/Contactservice.swift,
+				Services/Locationservice.swift,
+				Views/Addcontactview.swift,
+				Views/Circleview.swift,
+				Views/Components.swift,
+				Views/CreateAccountView.swift,
+				Views/Homeview.swift,
+				Views/Invitesheet.swift,
+				Views/MainTabView.swift,
+				Views/RootView.swift,
+				Views/SignInView.swift,
+				Views/Theme.swift,
+			);
+			target = 25BC63FB309F1D1C00A6DE6E /* safewalkappTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		25BC63FF309F1D1C00A6DE6E /* safewalkappTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = safewalkappTests;
+			sourceTree = "<group>";
+		};
+		25BC6409309F1D1D00A6DE6E /* safewalkappUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = safewalkappUITests;
+			sourceTree = "<group>";
+		};
+		25BC645530A31E4B00A6DE6E /* safewalkapp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				259CDD4330A31FD60034B9C8 /* Exceptions for "safewalkapp" folder in "safewalkapp" target */,
+				259CDD4430A31FD60034B9C8 /* Exceptions for "safewalkapp" folder in "safewalkappTests" target */,
+			);
+			path = safewalkapp;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25BC63EC309F1D1B00A6DE6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25BC644330A315C000A6DE6E /* FirebaseAuth in Frameworks */,
+				25BC644530A315C000A6DE6E /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25BC63F9309F1D1C00A6DE6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25BC6403309F1D1D00A6DE6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25BC63E6309F1D1B00A6DE6E = {
+			isa = PBXGroup;
+			children = (
+				25BC645530A31E4B00A6DE6E /* safewalkapp */,
+				25BC63FF309F1D1C00A6DE6E /* safewalkappTests */,
+				25BC6409309F1D1D00A6DE6E /* safewalkappUITests */,
+				25BC63F0309F1D1B00A6DE6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25BC63F0309F1D1B00A6DE6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25BC63EF309F1D1B00A6DE6E /* safewalkapp.app */,
+				25BC63FC309F1D1C00A6DE6E /* safewalkappTests.xctest */,
+				25BC6406309F1D1D00A6DE6E /* safewalkappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25BC63EE309F1D1B00A6DE6E /* safewalkapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25BC6410309F1D1D00A6DE6E /* Build configuration list for PBXNativeTarget "safewalkapp" */;
+			buildPhases = (
+				25BC63EB309F1D1B00A6DE6E /* Sources */,
+				25BC63EC309F1D1B00A6DE6E /* Frameworks */,
+				25BC63ED309F1D1B00A6DE6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = safewalkapp;
+			packageProductDependencies = (
+				25BC644230A315C000A6DE6E /* FirebaseAuth */,
+				25BC644430A315C000A6DE6E /* FirebaseFirestore */,
+			);
+			productName = safewalkapp;
+			productReference = 25BC63EF309F1D1B00A6DE6E /* safewalkapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25BC63FB309F1D1C00A6DE6E /* safewalkappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25BC6413309F1D1D00A6DE6E /* Build configuration list for PBXNativeTarget "safewalkappTests" */;
+			buildPhases = (
+				25BC63F8309F1D1C00A6DE6E /* Sources */,
+				25BC63F9309F1D1C00A6DE6E /* Frameworks */,
+				25BC63FA309F1D1C00A6DE6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25BC63FE309F1D1C00A6DE6E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				25BC63FF309F1D1C00A6DE6E /* safewalkappTests */,
+				25BC645530A31E4B00A6DE6E /* safewalkapp */,
+			);
+			name = safewalkappTests;
+			packageProductDependencies = (
+			);
+			productName = safewalkappTests;
+			productReference = 25BC63FC309F1D1C00A6DE6E /* safewalkappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		25BC6405309F1D1D00A6DE6E /* safewalkappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25BC6416309F1D1D00A6DE6E /* Build configuration list for PBXNativeTarget "safewalkappUITests" */;
+			buildPhases = (
+				25BC6402309F1D1D00A6DE6E /* Sources */,
+				25BC6403309F1D1D00A6DE6E /* Frameworks */,
+				25BC6404309F1D1D00A6DE6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25BC6408309F1D1D00A6DE6E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				25BC6409309F1D1D00A6DE6E /* safewalkappUITests */,
+			);
+			name = safewalkappUITests;
+			packageProductDependencies = (
+			);
+			productName = safewalkappUITests;
+			productReference = 25BC6406309F1D1D00A6DE6E /* safewalkappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25BC63E7309F1D1B00A6DE6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					25BC63EE309F1D1B00A6DE6E = {
+						CreatedOnToolsVersion = 26.0.1;
+						LastSwiftMigration = 2600;
+					};
+					25BC63FB309F1D1C00A6DE6E = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 25BC63EE309F1D1B00A6DE6E;
+					};
+					25BC6405309F1D1D00A6DE6E = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 25BC63EE309F1D1B00A6DE6E;
+					};
+				};
+			};
+			buildConfigurationList = 25BC63EA309F1D1B00A6DE6E /* Build configuration list for PBXProject "safewalkapp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25BC63E6309F1D1B00A6DE6E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				25BC644130A315C000A6DE6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 25BC63F0309F1D1B00A6DE6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25BC63EE309F1D1B00A6DE6E /* safewalkapp */,
+				25BC63FB309F1D1C00A6DE6E /* safewalkappTests */,
+				25BC6405309F1D1D00A6DE6E /* safewalkappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25BC63ED309F1D1B00A6DE6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25BC63FA309F1D1C00A6DE6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25BC6404309F1D1D00A6DE6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25BC63EB309F1D1B00A6DE6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25BC63F8309F1D1C00A6DE6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25BC6402309F1D1D00A6DE6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25BC63FE309F1D1C00A6DE6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25BC63EE309F1D1B00A6DE6E /* safewalkapp */;
+			targetProxy = 25BC63FD309F1D1C00A6DE6E /* PBXContainerItemProxy */;
+		};
+		25BC6408309F1D1D00A6DE6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25BC63EE309F1D1B00A6DE6E /* safewalkapp */;
+			targetProxy = 25BC6407309F1D1D00A6DE6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25BC640E309F1D1D00A6DE6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		25BC640F309F1D1D00A6DE6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		25BC6411309F1D1D00A6DE6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhinav.safetywalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "safewalkapp/safewalkapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		25BC6412309F1D1D00A6DE6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhinav.safetywalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "safewalkapp/safewalkapp-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		25BC6414309F1D1D00A6DE6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = safetywalk.safewalkappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/safewalkapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/safewalkapp";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		25BC6415309F1D1D00A6DE6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = safetywalk.safewalkappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/safewalkapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/safewalkapp";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		25BC6417309F1D1D00A6DE6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = safetywalk.safewalkappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = safewalkapp;
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		25BC6418309F1D1D00A6DE6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = safetywalk.safewalkappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = safewalkapp;
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25BC63EA309F1D1B00A6DE6E /* Build configuration list for PBXProject "safewalkapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25BC640E309F1D1D00A6DE6E /* Debug */,
+				25BC640F309F1D1D00A6DE6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25BC6410309F1D1D00A6DE6E /* Build configuration list for PBXNativeTarget "safewalkapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25BC6411309F1D1D00A6DE6E /* Debug */,
+				25BC6412309F1D1D00A6DE6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25BC6413309F1D1D00A6DE6E /* Build configuration list for PBXNativeTarget "safewalkappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25BC6414309F1D1D00A6DE6E /* Debug */,
+				25BC6415309F1D1D00A6DE6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25BC6416309F1D1D00A6DE6E /* Build configuration list for PBXNativeTarget "safewalkappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25BC6417309F1D1D00A6DE6E /* Debug */,
+				25BC6418309F1D1D00A6DE6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		25BC644130A315C000A6DE6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 12.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25BC644230A315C000A6DE6E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25BC644130A315C000A6DE6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		25BC644430A315C000A6DE6E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25BC644130A315C000A6DE6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 25BC63E7309F1D1B00A6DE6E /* Project object */;
+}
