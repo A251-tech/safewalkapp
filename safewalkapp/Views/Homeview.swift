@@ -6,12 +6,13 @@ struct HomeView: View {
     @EnvironmentObject private var auth: AuthController
     @EnvironmentObject private var contacts: ContactController
     @EnvironmentObject private var location: LocationService
+    @EnvironmentObject private var walk: WalkController
     @StateObject private var search = DestinationController()
     @Binding var selectedTab: AppTab
 
     @FocusState private var searchFocused: Bool
     @State private var camera: MapCameraPosition = .userLocation(fallback: .automatic)
-    @State private var showRoutesNotice = false
+    @State private var showRoutes = false
 
     private var needsContacts: Bool { contacts.hasLoaded && contacts.contacts.isEmpty }
     private var showSuggestions: Bool { searchFocused && !search.suggestions.isEmpty }
@@ -49,9 +50,9 @@ struct HomeView: View {
                 if let item = search.destination { destinationCard(item) }
 
                 PrimaryButton(title: "Compare walking routes",
-                              isEnabled: search.destination != nil && !needsContacts) {
-                    // NEXT STEP: navigate to the Routes screen with search.destination
-                    showRoutesNotice = true
+                              isEnabled: search.destination != nil) {
+                    print("SAFEWALK: Compare tapped, destination =", search.destination?.name ?? "nil")
+                    showRoutes = true
                 }
 
                 privacyNote
@@ -66,10 +67,26 @@ struct HomeView: View {
             if let coordinate = newValue?.coordinate { search.updateRegion(around: coordinate) }
         }
         .onChange(of: search.destination) { _, _ in fitCamera() }
-        .alert("Routes screen is next", isPresented: $showRoutesNotice) {
-            Button("OK", role: .cancel) {}
-        } message: {
-            Text("We'll build route comparison in the next step.")
+        .toolbar(.hidden, for: .navigationBar)
+        // Presented as a full-screen cover so it never depends on an outer NavigationStack
+        .fullScreenCover(isPresented: $showRoutes) {
+            if let item = search.destination {
+                NavigationStack {
+                    RoutesView(destination: item)
+                        .toolbar {
+                            ToolbarItem(placement: .topBarLeading) {
+                                Button { showRoutes = false } label: {
+                                    Label("Back", systemImage: "chevron.left")
+                                }
+                                .foregroundColor(Theme.navy)
+                            }
+                        }
+                }
+                .environmentObject(auth)
+                .environmentObject(contacts)
+                .environmentObject(location)
+                .environmentObject(walk)
+            }
         }
     }
 
@@ -167,7 +184,7 @@ struct HomeView: View {
         Map(position: $camera) {
             UserAnnotation()
             if let item = search.destination {
-                Marker(item.name ?? "Destination", coordinate: item.placemark.coordinate)
+                Marker(item.name ?? "Destination", coordinate: item.mapCoordinate)
                     .tint(Theme.navy)
             }
         }
@@ -199,10 +216,9 @@ struct HomeView: View {
 
     private func distanceText(to item: MKMapItem) -> String {
         guard let here = location.location else { return "Walking destination" }
-        let target = CLLocation(latitude: item.placemark.coordinate.latitude,
-                                longitude: item.placemark.coordinate.longitude)
-        let miles = here.distance(from: target) / 1609.34
-        return String(format: "%.1f mi from you", miles)
+        let target = CLLocation(latitude: item.mapCoordinate.latitude,
+                                longitude: item.mapCoordinate.longitude)
+        return MKDistanceFormatter().string(fromDistance: here.distance(from: target)) + " from you"
     }
 
     private var addContactPrompt: some View {
@@ -250,7 +266,7 @@ struct HomeView: View {
 
     // Zoom the map so both you and the destination are visible
     private func fitCamera() {
-        guard let dest = search.destination?.placemark.coordinate else { return }
+        guard let dest = search.destination?.mapCoordinate else { return }
         guard let me = location.location?.coordinate else {
             camera = .region(MKCoordinateRegion(center: dest,
                                                 latitudinalMeters: 800, longitudinalMeters: 800))

@@ -6,3 +6,7 @@ build/
 .build/
 *.ipa
 GoogleService-Info.plist
+xcuserdata/
+DerivedData/
+.DS_Store
+*.xcuserstate

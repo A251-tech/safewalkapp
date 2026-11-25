@@ -29,74 +29,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		259CDE1C30B021930034B9C8 /* Manipal.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Manipal.gpx; path = safewalkapp/Manipal.gpx; sourceTree = "<group>"; };
 		25BC63EF309F1D1B00A6DE6E /* safewalkapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = safewalkapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25BC63FC309F1D1C00A6DE6E /* safewalkappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = safewalkappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25BC6406309F1D1D00A6DE6E /* safewalkappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = safewalkappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		259CDD4330A31FD60034B9C8 /* Exceptions for "safewalkapp" folder in "safewalkapp" target */ = {
+		25C80C3030B7282100FE9760 /* Exceptions for "safewalkapp" folder in "safewalkapp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Assets.xcassets,
-				Controllers/AuthController.swift,
-				Controllers/Contactcontroller.swift,
-				Controllers/Destinationcontroller.swift,
-				"GoogleService-Info.plist",
-				Models/AppUser.swift,
-				Models/Trustedcontact.swift,
-				safewalkappApp.swift,
-				Services/AuthService.swift,
-				Services/Contactservice.swift,
-				Services/Locationservice.swift,
-				Views/Addcontactview.swift,
-				Views/Circleview.swift,
-				Views/Components.swift,
-				Views/CreateAccountView.swift,
-				Views/Homeview.swift,
-				Views/Invitesheet.swift,
-				Views/MainTabView.swift,
-				Views/RootView.swift,
-				Views/SignInView.swift,
-				Views/Theme.swift,
+				Info.plist,
 			);
 			target = 25BC63EE309F1D1B00A6DE6E /* safewalkapp */;
-		};
-		259CDD4430A31FD60034B9C8 /* Exceptions for "safewalkapp" folder in "safewalkappTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Assets.xcassets,
-				Controllers/AuthController.swift,
-				Controllers/Contactcontroller.swift,
-				Controllers/Destinationcontroller.swift,
-				"GoogleService-Info.plist",
-				Models/AppUser.swift,
-				Models/Trustedcontact.swift,
-				safewalkappApp.swift,
-				Services/AuthService.swift,
-				Services/Contactservice.swift,
-				Services/Locationservice.swift,
-				Views/Addcontactview.swift,
-				Views/Circleview.swift,
-				Views/Components.swift,
-				Views/CreateAccountView.swift,
-				Views/Homeview.swift,
-				Views/Invitesheet.swift,
-				Views/MainTabView.swift,
-				Views/RootView.swift,
-				Views/SignInView.swift,
-				Views/Theme.swift,
-			);
-			target = 25BC63FB309F1D1C00A6DE6E /* safewalkappTests */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		25BC63FF309F1D1C00A6DE6E /* safewalkappTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = safewalkappTests;
-			sourceTree = "<group>";
-		};
 		25BC6409309F1D1D00A6DE6E /* safewalkappUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = safewalkappUITests;
@@ -105,8 +54,7 @@
 		25BC645530A31E4B00A6DE6E /* safewalkapp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				259CDD4330A31FD60034B9C8 /* Exceptions for "safewalkapp" folder in "safewalkapp" target */,
-				259CDD4430A31FD60034B9C8 /* Exceptions for "safewalkapp" folder in "safewalkappTests" target */,
+				25C80C3030B7282100FE9760 /* Exceptions for "safewalkapp" folder in "safewalkapp" target */,
 			);
 			path = safewalkapp;
 			sourceTree = "<group>";
@@ -143,8 +91,8 @@
 		25BC63E6309F1D1B00A6DE6E = {
 			isa = PBXGroup;
 			children = (
+				259CDE1C30B021930034B9C8 /* Manipal.gpx */,
 				25BC645530A31E4B00A6DE6E /* safewalkapp */,
-				25BC63FF309F1D1C00A6DE6E /* safewalkappTests */,
 				25BC6409309F1D1D00A6DE6E /* safewalkappUITests */,
 				25BC63F0309F1D1B00A6DE6E /* Products */,
 			);
@@ -175,6 +123,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				25BC645530A31E4B00A6DE6E /* safewalkapp */,
+			);
 			name = safewalkapp;
 			packageProductDependencies = (
 				25BC644230A315C000A6DE6E /* FirebaseAuth */,
@@ -196,10 +147,6 @@
 			);
 			dependencies = (
 				25BC63FE309F1D1C00A6DE6E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				25BC63FF309F1D1C00A6DE6E /* safewalkappTests */,
-				25BC645530A31E4B00A6DE6E /* safewalkapp */,
 			);
 			name = safewalkappTests;
 			packageProductDependencies = (
@@ -393,6 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "SafeWalk uses your location to plan and share your walk.";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -448,6 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "SafeWalk uses your location to plan and share your walk.";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -463,10 +412,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZW66469CM2;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = safewalkapp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "SafeWalk uses your location to plan and share your walk.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -508,10 +460,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZW66469CM2;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = safewalkapp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "SafeWalk uses your location to plan and share your walk.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
